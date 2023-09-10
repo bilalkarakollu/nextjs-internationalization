@@ -13,7 +13,6 @@ const Home = () => {
         <meta name="description" content={t("meta.title")} />
       </Head>
       <div className="pt-10">
-        {t("example")}
         <div>
           <h1 className="text-6xl font-bold text-center">{t("page.title")}</h1>
         </div>
