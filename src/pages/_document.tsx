@@ -4,26 +4,14 @@ import Document, {
   Main,
   NextScript,
   DocumentInitialProps,
-  DocumentContext,
 } from "next/document";
 
-interface MyDocumentProps extends DocumentInitialProps {
-  locale: string;
-}
+import { i18n } from "next-i18next";
 
-export default class MyDocument extends Document<MyDocumentProps> {
-  static async getInitialProps(ctx: DocumentContext): Promise<MyDocumentProps> {
-    const initialProps = await Document.getInitialProps(ctx);
-
-    // @ts-ignore
-    const locale = ctx.req?.locale || "en";
-
-    return { ...initialProps, locale };
-  }
-
+export default class MyDocument extends Document<DocumentInitialProps> {
   render() {
     return (
-      <Html lang={this.props.locale}>
+      <Html lang={i18n?.language}>
         <Head />
         <body className="min-h-screen">
           <Main />
