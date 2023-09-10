@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "title": "Next.js Internationalization Example",
+    "description": "Internationalization example using Next.js"
+  },
+  "page": {
+    "title": "Next.js Internationalization Example",
+    "description": "Internationalization example using Next.js. You can use '/en' or '/es' on page url to change the language.",
+    "copyright": "Copyright Bilal Karakollu {{currentYear}}"
+  },
+  "button": {
+    "homePage": "Home Page",
+    "secondPage": "Second Page"
+  }
+}

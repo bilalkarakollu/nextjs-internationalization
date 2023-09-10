@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "title": "Ejemplo de Internacionalización en Next.js",
+    "description": "Ejemplo de internacionalización utilizando Next.js"
+  },
+  "page": {
+    "title": "Ejemplo de Internacionalización en Next.js",
+    "description": "Ejemplo de internacionalización utilizando Next.js. Puede utilizar '/en' o '/es' en la URL de la página para cambiar el idioma.",
+    "copyright": "Derechos de autor Bilal Karakollu {{currentYear}}"
+  },
+  "button": {
+    "homePage": "Página de inicio",
+    "secondPage": "Segunda página"
+  }
+}
