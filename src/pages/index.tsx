@@ -33,7 +33,7 @@ const Home = () => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const locale = "en";
+  const locale = context.locale || context.defaultLocale || "en";
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),
