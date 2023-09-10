@@ -10,8 +10,6 @@ const Header = () => {
   const locales = i18n.options?.locales;
 
   const changeLang = (lang: string) => {
-    console.log({ router });
-    console.log(`/${lang}${router.pathname}`);
     router.push(`/${lang}${router.pathname}`, undefined, { locale: lang });
   };
 
