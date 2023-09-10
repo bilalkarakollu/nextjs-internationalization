@@ -1,9 +1,17 @@
-/** @type {import('next').NextConfig} */
 const { i18n } = require("./next-i18next.config");
+const { loadEnvConfig } = require("@next/env");
+
+const projectDir = process.cwd();
+loadEnvConfig(projectDir);
+
+/** @type {import('next').NextConfig} */
 
 const nextConfig = {
   i18n,
-  reactStrictMode: true,
+  trailingSlash: true,
+  generateEtags: false,
+  poweredByHeader: false,
+  compress: false,
 };
 
 module.exports = nextConfig;
